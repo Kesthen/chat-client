@@ -8,7 +8,7 @@ Cliente frontend reactivo con estética de **Estación Espacial Orbital**, desar
 
 El frontend ha sido diseñado completamente bajo la identidad de una **Estación Espacial Orbital (DOSW Orbital Telemetry)**:
 - **Tema Espacial:** Paleta cyberpunk espacial (`#070913`, cian eléctrico `#06b6d4`, violeta orbital `#8b5cf6`), tipografía temática (*Orbitron* y *Poppins*), badges de telemetría y efectos de resplandor cuántico.
-- **Selector de Insignias / Avatares:** Al ingresar, el tripulante puede elegir su insignia espacial (🚀, 👨‍🚀, 👩‍🚀, 🛸, 🛰️, 👾, ⚡, 🤖) y su callsign identificador.
+- **Selector de Insignias / Avatares:** Al ingresar, el tripulante puede elegir su insignia espacial y su callsign identificador.
 - **Selector Integrado de Emojis:** Selector flotante mediante `emoji-picker-react` con búsqueda y paleta oscura.
 - **Subida de Archivos y Transmisiones Visuales:** Envío de imágenes directamente a `/api/archivos` mediante HTTP `POST` multipart y difusión de su URL por el WebSocket.
 - **Transmisiones de Voz:** Grabación de notas de voz en tiempo real con la API del navegador `MediaRecorder`, conversión a formato contenedor y reproducción integrada.
