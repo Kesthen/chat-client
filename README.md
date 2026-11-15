@@ -1,10 +1,10 @@
-# 🛸 Chat Client - Interfaz Orbital React (DOSW Semana 15)
+#  Chat Client - Interfaz Orbital React (DOSW Semana 15)
 
 Cliente frontend reactivo con estética de **Estación Espacial Orbital**, desarrollado con **React**, **Vite** y comunicación en tiempo real sobre **WebSockets nativos** mediante el protocolo **STOMP 1.2** (`@stomp/stompjs`).
 
 ---
 
-## 🌌 1. Características e Identidad Visual (Parte 2: +3 Puntos)
+##  1. Características e Identidad Visual (Parte 2: +3 Puntos)
 
 El frontend ha sido diseñado completamente bajo la identidad de una **Estación Espacial Orbital (DOSW Orbital Telemetry)**:
 - **Tema Espacial:** Paleta cyberpunk espacial (`#070913`, cian eléctrico `#06b6d4`, violeta orbital `#8b5cf6`), tipografía temática (*Orbitron* y *Poppins*), badges de telemetría y efectos de resplandor cuántico.
@@ -18,7 +18,7 @@ El frontend ha sido diseñado completamente bajo la identidad de una **Estación
 
 ---
 
-## 📡 2. Destinos STOMP Utilizados
+##  2. Destinos STOMP Utilizados
 
 - **Broker URL:** `ws://localhost:8080/ws`
 - **Suscripciones del Cliente:**
@@ -31,7 +31,7 @@ El frontend ha sido diseñado completamente bajo la identidad de una **Estación
 
 ---
 
-## 🚀 3. Instrucciones de Ejecución
+##  3. Instrucciones de Ejecución
 
 ### Prerrequisitos
 - **Node.js 20+** o **Node.js 24+**
@@ -55,7 +55,7 @@ La aplicación estará disponible inmediatamente en `http://localhost:5173`.
 
 ---
 
-## 🛰️ 4. Inspección del Handshake en DevTools
+##  4. Inspección del Handshake en DevTools
 
 Para comprobar la arquitectura WebSocket explicada en clase:
 1. Abre Google Chrome o Edge en `http://localhost:5173`.
@@ -67,7 +67,7 @@ Para comprobar la arquitectura WebSocket explicada en clase:
 
 ---
 
-## 📋 5. Respuestas a las Preguntas Teóricas
+##  5. Respuestas a las Preguntas Teóricas
 
 1. **¿Por qué un chat con HTTP normal tendría que estar preguntándole al servidor cada segundo, y qué cambia con WebSocket?**
    - En HTTP clásico, el protocolo es unidireccional (el cliente siempre debe iniciar la petición). Para enterarse de nuevos mensajes, el cliente debe hacer *polling* constante (peticiones GET periódicas), lo cual satura la red y genera cabeceras repetitivas. Con WebSocket, tras el handshake inicial, se mantiene un socket TCP bidireccional abierto; cuando alguien envía un mensaje, el servidor lo empuja inmediatamente (*push*) a todos los clientes suscritos.
